@@ -6,6 +6,15 @@
 
 ## \[Unreleased\]
 
+## Bug Fixes
+
+- Argument naming
+  ([381cea7](https://github.com/jimbrig/reapi/commit/381cea7ceb9b1a55bc2fd2c25fcaf3e43483a576)) -
+  (Jimmy Briggs)
+- Rename .gitkeep for R CMD Check
+  ([52523e3](https://github.com/jimbrig/reapi/commit/52523e3e4e7dcdc02845b95f16c0721d8e423616)) -
+  (Jimmy Briggs)
+
 ## Configuration
 
 - Add dev/.gitignore to ignore temp files
