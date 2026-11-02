@@ -4,9 +4,11 @@
 <!-- badges: start -->
 [![R](https://img.shields.io/badge/Version-%E2%89%A5%204.2.0-blue?style=social&logo=R&logoColor=%23276DC3)](https://cran.r-project.org/)
 [![Status](https://img.shields.io/badge/Status-Work%20in%20Progress-darkgreen)]()
+
 [![RealEstateAPI](https://img.shields.io/badge/RealEstateAPI-Reference%20Documentation-purple)](https://api.realestateapi.com/reference)
 [![Swagger (Production)](https://img.shields.io/badge/Swagger-Production-green?logo=swagger&logoColor=%2385EA2D)](https://api.realestateapi.com/swagger.json)
 [![Swagger (Staging)](https://img.shields.io/badge/Swagger-Staging-green?logo=swagger&logoColor=%2385EA2D)](https://staging.realestateapi.com/swagger.json)
+
 [![Automate Changelog](https://github.com/jimbrig/reapi/actions/workflows/changelog.yml/badge.svg)](https://github.com/jimbrig/reapi/actions/workflows/changelog.yml)
 [![pkgdown](https://github.com/jimbrig/reapi/actions/workflows/pkgdown.yml/badge.svg)](https://github.com/jimbrig/reapi/actions/workflows/pkgdown.yml)
 [![R-CMD-Check](https://github.com/jimbrig/reapi/actions/workflows/check.yml/badge.svg)](https://github.com/jimbrig/reapi/actions/workflows/check.yml)
