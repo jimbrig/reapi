@@ -58,6 +58,7 @@
 #'   `glue` interpolation, inline markup syntax, and other features.
 #' @param cls Optional character vector of additional classes to assign to the condition.
 #' @inheritParams cli::cli_abort
+#' @inheritParams rlang::abort
 #'
 #' @returns
 #' These functions do not return values, but are used for their side effects, namely

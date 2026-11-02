@@ -2,3 +2,42 @@ url: http://docs.jimbrig.com/reapi/
 template:
   bootstrap: 5
 
+reference:
+  - title: Conditions
+    desc: Custom package conditions.
+    contents:
+      - reapi_abort
+      - reapi_warn
+      - reapi_inform
+      - reapi_abort_check
+      - reapi_warn_check
+      - reapi_inform_check
+      - check_abort
+      - check_warn
+      - check_inform
+  - title: Active Configuration Management
+    desc: Utilities to manage the active configuration environment.
+    contents:
+      - get_active_config_env
+      - set_active_config_env
+      - get_active_config_file
+      - set_active_config_file
+  - title: Checks (Assertions)
+    desc: Utilities for performing internal argument checks and assertions.
+    contents:
+      - check_inherits
+      - check_inherits2
+      - check_inherits_any
+      - check_inherits_all
+      - check_not_empty
+      - check_string
+  - title: Documentation
+    desc: Utilities for accessing documentation.
+    contents:
+      - reapi_links
+      - reapi_docs
+      - pkg_docs
+  - title: Package Utilities
+    desc: Internal package utilities.
+    contents:
+      - utils_pkg

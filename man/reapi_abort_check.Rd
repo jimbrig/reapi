@@ -46,6 +46,25 @@ passed to \code{\link[cli:cli_bullets]{cli::cli_bullets()}} allowing for \code{c
 \item{...}{Passed to \code{\link[rlang:abort]{rlang::abort()}}, \code{\link[rlang:abort]{rlang::warn()}} or
 \code{\link[rlang:abort]{rlang::inform()}}.}
 
+\item{parent}{Supply \code{parent} when you rethrow an error from a
+condition handler (e.g. with \code{\link[rlang:try_fetch]{try_fetch()}}).
+\itemize{
+\item If \code{parent} is a condition object, a \emph{chained error} is
+created, which is useful when you want to enhance an error with
+more details, while still retaining the original information.
+\item If \code{parent} is \code{NA}, it indicates an unchained rethrow, which
+is useful when you want to take ownership over an error and
+rethrow it with a custom message that better fits the
+surrounding context.
+
+Technically, supplying \code{NA} lets \code{abort()} know it is called
+from a condition handler. This helps it create simpler
+backtraces where the condition handling context is hidden by
+default.
+}
+
+For more information about error calls, see \ifelse{html}{\link[rlang:topic-error-chaining]{Including contextual information with error chains}}{\link[rlang:topic-error-chaining]{Including contextual information with error chains}}.}
+
 \item{call}{The execution environment of a currently running
 function, e.g. \code{call = caller_env()}. The corresponding function
 call is retrieved and mentioned in error messages as the source
