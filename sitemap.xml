@@ -1,12 +1,32 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url><loc>http://docs.jimbrig.com/reapi/404.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/AGENTS.html</loc></url>
 <url><loc>http://docs.jimbrig.com/reapi/CHANGELOG.html</loc></url>
 <url><loc>http://docs.jimbrig.com/reapi/LICENSE-text.html</loc></url>
 <url><loc>http://docs.jimbrig.com/reapi/LICENSE.html</loc></url>
 <url><loc>http://docs.jimbrig.com/reapi/LINKS.html</loc></url>
 <url><loc>http://docs.jimbrig.com/reapi/authors.html</loc></url>
 <url><loc>http://docs.jimbrig.com/reapi/index.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/active_config.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/check_inherits.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/check_not_empty.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/check_string.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/dot-shared_params.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/dot-shared_returns_request.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/dot-shared_returns_response.html</loc></url>
 <url><loc>http://docs.jimbrig.com/reapi/reference/index.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/pkg_docs.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/pkg_name.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/pkg_repo.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/pkg_sys.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/pkg_user_agent.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/pkg_version.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/reapi-conditions.html</loc></url>
 <url><loc>http://docs.jimbrig.com/reapi/reference/reapi-package.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/reapi_abort_check.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/reapi_docs.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/reapi_links.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/reapi_request_modifiers.html</loc></url>
+<url><loc>http://docs.jimbrig.com/reapi/reference/utils_pkg.html</loc></url>
 </urlset>
 
