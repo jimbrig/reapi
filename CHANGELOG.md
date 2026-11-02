@@ -6,6 +6,10 @@
 
 ## [Unreleased]
 
+## Configuration
+
+- Add dev/.gitignore to ignore temp files ([d2cd67c](https://github.com/jimbrig/reapi/commit/d2cd67cf3dd5f9407c7fec226f9837a7f693235f))  - (Jimmy Briggs)
+
 ## Documentation
 
 - : fix README badges & logo ([c34c1a3](https://github.com/jimbrig/reapi/commit/c34c1a32597872a06b0bd7521ac166e024ea8965))  - (Jimmy Briggs)
