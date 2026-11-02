@@ -1,22 +1,11 @@
 # reapi
 
-![Real Estate API Logo](reference/figures/reapi-logo-color.svg)
-
-[![Status](https://img.shields.io/badge/Status-Work%20in%20Progress-darkgreen)](http://docs.jimbrig.com/reapi/)
-
-[![RealEstateAPI](https://img.shields.io/badge/RealEstateAPI-Reference%20Documentation-purple)](https://api.realestateapi.com/reference)
-[![Swagger
-(Production)](https://img.shields.io/badge/Swagger-Production-purple?logo=swagger&logoColor=%2385EA2D)](https://api.realestateapi.com/swagger.json)
-[![Swagger
-(Staging)](https://img.shields.io/badge/Swagger-Production-purple?logo=swagger&logoColor=%2385EA2D)](https://staging.realestateapi.com/swagger.json)
-
-[![Automate
-Changelog](https://github.com/jimbrig/reapi/actions/workflows/changelog.yml/badge.svg)](https://github.com/jimbrig/reapi/actions/workflows/changelog.yml)
-[![pkgdown](https://github.com/jimbrig/reapi/actions/workflows/pkgdown.yml/badge.svg)](https://github.com/jimbrig/reapi/actions/workflows/pkgdown.yml)
-[![R-CMD-Check](https://github.com/jimbrig/reapi/actions/workflows/check.yml/badge.svg)](https://github.com/jimbrig/reapi/actions/workflows/check.yml)
+------------------------------------------------------------------------
 
 > **[Real Estate API](https://realestateapi.com) Integration Client for
 > R**
+
+![Real Estate API Logo](reference/figures/reapi-logo-color.svg)
 
 ------------------------------------------------------------------------
 
