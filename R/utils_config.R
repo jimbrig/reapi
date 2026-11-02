@@ -67,7 +67,7 @@ get_active_config_file <- function(default = pkg_sys_config("config.yml")) {
 #' @param file The configuration file path to set as active.
 set_active_config_file <- function(file) {
   old_file <- get_active_config_file()
-  check_file(path = file, ext = "yml")
+  check_file(file, ext = "yml")
   Sys.setenv(REAPI_CONFIG_FILE = file, R_CONFIG_FILE = file)
   invisible(old_file)
 }
