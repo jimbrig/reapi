@@ -291,20 +291,20 @@ check_reapi_response <- function(x, arg = rlang::caller_arg(x), call = rlang::ca
 }
 
 check_reapi_endpoint <- function(x, arg = rlang::caller_arg(x), call = rlang::caller_env()) {
-  if (!x %in% .reapi_endpoints()) {
+  if (!x %in% .reapi_endpoints) {
     check_abort(msg = "{.arg {arg}} is not a valid endpoint for Real Estate API", call = call)
   }
   invisible(x)
 }
 
-check_reapi_params <- function(x, arg = rlang::caller_arg(params), call = rlang::caller_env()) {
+check_reapi_params <- function(x, arg = rlang::caller_arg(x), call = rlang::caller_env()) {
   check_inherits(x, "reapi_params", arg = arg, call = call)
 }
 
-check_reapi_operator <- function(x, arg = rlang::caller_arg(operator), call = rlang::caller_env()) {
+check_reapi_operator <- function(x, arg = rlang::caller_arg(x), call = rlang::caller_env()) {
   valid_ops <- c("gt", "lt", "eq")
   if (!x %in% valid_ops) {
-    check_abort("{.arg {arg}} must be one of {.val {valid_ops}}, not {.val {operator}}", call = call)
+    check_abort("{.arg {arg}} must be one of {.val {valid_ops}}, not {.val {x}}", call = call)
   }
   invisible(x)
 }
@@ -354,3 +354,12 @@ check_json_file <- function(x, arg = rlang::caller_arg(x), call = rlang::caller_
 
 # internal ----------------------------------------------------------------
 
+.reapi_endpoints <- c(
+  "AutoComplete",
+  "PropertySearch",
+  "PropertySearch/odata",
+  "PropertyDetail",
+  "PropGPT",
+  "PropertyComps",
+  "PropertyParcel"
+)

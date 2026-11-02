@@ -172,15 +172,3 @@ check_warn <- reapi_warn_check
 #' @export
 check_inform <- reapi_inform_check
 
-# config -------------------------------------------------------------------
-
-reapi_abort_config <- function(msg, ..., parent = NULL, call = rlang::caller_env(), .envir = parent.frame()) {
-  reapi_abort(msg = msg, cls = "reapi_config_error", parent = parent, ..., call = call, .envir = .envir)
-}
-
-reapi_abort_config_api_key <- function(arg = "api_key", call = rlang::caller_env()) {
-  reapi_abort(msg = "{.arg {arg}} is required. Set the API key using the environment variable {.envvar ENTRATA_API_KEY}.", parent = get_reapi_config(), call = call, .envir = parent.frame())
-}
-
-# request ------------------------------------------------------------------
-
