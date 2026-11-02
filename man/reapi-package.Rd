@@ -4,14 +4,15 @@
 \name{reapi-package}
 \alias{reapi}
 \alias{reapi-package}
-\title{reapi: What the Package Does (One Line, Title Case)}
+\title{\code{reapi}: R API Client for RealEstateAPI}
 \description{
-What the package does (one paragraph).
+This package provides a convenient R interface to the RealEstateAPI APIs.
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://github.com/jimbrig/reapi}
+  \item \url{http://docs.jimbrig.com/reapi/}
   \item Report bugs at \url{https://github.com/jimbrig/reapi/issues}
 }
 

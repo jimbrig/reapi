@@ -13,14 +13,18 @@ BugReports: https://github.com/jimbrig/reapi/issues
 Depends: 
     R (>= 4.2.0)
 Imports: 
-    httr2,
-    rlang (>= 1.1.0)
+    cli,
+    crayon,
+    rlang (>= 1.1.0),
+    tools,
+    utils,
+    yyjsonr
 Suggests: 
     httptest2,
     knitr,
     rmarkdown,
     spelling,
-    testthat (>= 3.0.0),
+    testthat,
     withr
 Config/rcmdcheck/ignore-inconsequential-notes: true
 Config/roxygen2/markdown: TRUE

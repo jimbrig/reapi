@@ -1,0 +1,15 @@
+# reapi configuration
+
+default:
+  reapi:
+    base_url: "https://api.realestateapi.com"
+    api_key: !expr Sys.getenv("REAPI_API_KEY", "")
+    api_key_public: !expr Sys.getenv("REAPI_API_KEY_PUBLIC", "")
+    user_id: !expr Sys.getenv("REAPI_USER_ID", "")
+    openai_api_key: !expr Sys.getenv("OPENAI_API_KEY", "")
+
+testing:
+
+development:
+
+production:
