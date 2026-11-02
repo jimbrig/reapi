@@ -50,28 +50,9 @@ Jimmy Briggs <jimmy.briggs@jimbrig.com>
 
 # Package index
 
-## All functions
+## Conditions
 
-- [`get_active_config_env()`](http://docs.jimbrig.com/reapi/reference/active_config.md)
-  [`set_active_config_env()`](http://docs.jimbrig.com/reapi/reference/active_config.md)
-  [`get_active_config_file()`](http://docs.jimbrig.com/reapi/reference/active_config.md)
-  [`set_active_config_file()`](http://docs.jimbrig.com/reapi/reference/active_config.md)
-  : Manage Active Configuration
-
-- [`check_inherits()`](http://docs.jimbrig.com/reapi/reference/check_inherits.md)
-  [`check_inherits2()`](http://docs.jimbrig.com/reapi/reference/check_inherits.md)
-  [`check_inherits_any()`](http://docs.jimbrig.com/reapi/reference/check_inherits.md)
-  [`check_inherits_all()`](http://docs.jimbrig.com/reapi/reference/check_inherits.md)
-  : Class Inheritance Checks
-
-- [`check_not_empty()`](http://docs.jimbrig.com/reapi/reference/check_not_empty.md)
-  : Check Not Empty
-
-- [`check_string()`](http://docs.jimbrig.com/reapi/reference/check_string.md)
-  : Check String (Scalar)
-
-- [`pkg_docs()`](http://docs.jimbrig.com/reapi/reference/pkg_docs.md) :
-  Package Docs
+Custom package conditions.
 
 - [`reapi_abort()`](http://docs.jimbrig.com/reapi/reference/reapi-conditions.md)
   [`reapi_warn()`](http://docs.jimbrig.com/reapi/reference/reapi-conditions.md)
@@ -88,14 +69,44 @@ Jimmy Briggs <jimmy.briggs@jimbrig.com>
   [`check_inform()`](http://docs.jimbrig.com/reapi/reference/reapi_abort_check.md)
   : Check Conditions
 
-- [`reapi_docs()`](http://docs.jimbrig.com/reapi/reference/reapi_docs.md)
-  : Open Real Estate API Documentation
+## Active Configuration Management
+
+Utilities to manage the active configuration environment.
+
+- [`get_active_config_env()`](http://docs.jimbrig.com/reapi/reference/active_config.md)
+  [`set_active_config_env()`](http://docs.jimbrig.com/reapi/reference/active_config.md)
+  [`get_active_config_file()`](http://docs.jimbrig.com/reapi/reference/active_config.md)
+  [`set_active_config_file()`](http://docs.jimbrig.com/reapi/reference/active_config.md)
+  : Manage Active Configuration
+
+## Checks (Assertions)
+
+Utilities for performing internal argument checks and assertions.
+
+- [`check_inherits()`](http://docs.jimbrig.com/reapi/reference/check_inherits.md)
+  [`check_inherits2()`](http://docs.jimbrig.com/reapi/reference/check_inherits.md)
+  [`check_inherits_any()`](http://docs.jimbrig.com/reapi/reference/check_inherits.md)
+  [`check_inherits_all()`](http://docs.jimbrig.com/reapi/reference/check_inherits.md)
+  : Class Inheritance Checks
+- [`check_not_empty()`](http://docs.jimbrig.com/reapi/reference/check_not_empty.md)
+  : Check Not Empty
+- [`check_string()`](http://docs.jimbrig.com/reapi/reference/check_string.md)
+  : Check String (Scalar)
+
+## Documentation
+
+Utilities for accessing documentation.
 
 - [`reapi_links`](http://docs.jimbrig.com/reapi/reference/reapi_links.md)
   : Real Estate API Links
+- [`reapi_docs()`](http://docs.jimbrig.com/reapi/reference/reapi_docs.md)
+  : Open Real Estate API Documentation
+- [`pkg_docs()`](http://docs.jimbrig.com/reapi/reference/pkg_docs.md) :
+  Package Docs
 
-- [`reapi_request_modifiers`](http://docs.jimbrig.com/reapi/reference/reapi_request_modifiers.md)
-  : Real Estate API Request Modifiers
+## Package Utilities
+
+Internal package utilities.
 
 - [`utils_pkg`](http://docs.jimbrig.com/reapi/reference/utils_pkg.md) :
   Package Utilities

@@ -91,6 +91,22 @@ passed to <code><a href="https://cli.r-lib.org/reference/cli_bullets.html" class
 <code><a href="https://rlang.r-lib.org/reference/abort.html" class="external-link">rlang::inform()</a></code>.</p></dd>
 
 
+<dt id="arg-parent">parent<a class="anchor" aria-label="anchor" href="#arg-parent"></a></dt>
+<dd><p>Supply <code>parent</code> when you rethrow an error from a
+condition handler (e.g. with <code><a href="https://rlang.r-lib.org/reference/try_fetch.html" class="external-link">try_fetch()</a></code>).</p><ul><li><p>If <code>parent</code> is a condition object, a <em>chained error</em> is
+created, which is useful when you want to enhance an error with
+more details, while still retaining the original information.</p></li>
+<li><p>If <code>parent</code> is <code>NA</code>, it indicates an unchained rethrow, which
+is useful when you want to take ownership over an error and
+rethrow it with a custom message that better fits the
+surrounding context.</p>
+<p>Technically, supplying <code>NA</code> lets <code>abort()</code> know it is called
+from a condition handler. This helps it create simpler
+backtraces where the condition handling context is hidden by
+default.</p></li>
+</ul><p>For more information about error calls, see <a href="https://rlang.r-lib.org/reference/topic-error-chaining.html" class="external-link">Including contextual information with error chains</a>.</p></dd>
+
+
 <dt id="arg-call">call<a class="anchor" aria-label="anchor" href="#arg-call"></a></dt>
 <dd><p>The execution environment of a currently running
 function, e.g. <code>call = caller_env()</code>. The corresponding function

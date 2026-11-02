@@ -55,6 +55,28 @@ check_inform(msg, ..., call = rlang::caller_env(), .envir = parent.frame())
   [`rlang::warn()`](https://rlang.r-lib.org/reference/abort.html) or
   [`rlang::inform()`](https://rlang.r-lib.org/reference/abort.html).
 
+- parent:
+
+  Supply `parent` when you rethrow an error from a condition handler
+  (e.g. with
+  [`try_fetch()`](https://rlang.r-lib.org/reference/try_fetch.html)).
+
+  - If `parent` is a condition object, a *chained error* is created,
+    which is useful when you want to enhance an error with more details,
+    while still retaining the original information.
+
+  - If `parent` is `NA`, it indicates an unchained rethrow, which is
+    useful when you want to take ownership over an error and rethrow it
+    with a custom message that better fits the surrounding context.
+
+    Technically, supplying `NA` lets `abort()` know it is called from a
+    condition handler. This helps it create simpler backtraces where the
+    condition handling context is hidden by default.
+
+  For more information about error calls, see [Including contextual
+  information with error
+  chains](https://rlang.r-lib.org/reference/topic-error-chaining.html).
+
 - call:
 
   The execution environment of a currently running function, e.g.

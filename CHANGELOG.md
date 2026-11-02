@@ -8,6 +8,9 @@
 
 ## Bug Fixes
 
+- Minor tweaks for R CMD Check
+  ([ef8d350](https://github.com/jimbrig/reapi/commit/ef8d350ad06fe62af7357336178ee84126d94f02)) -
+  (Jimmy Briggs)
 - Argument naming
   ([381cea7](https://github.com/jimbrig/reapi/commit/381cea7ceb9b1a55bc2fd2c25fcaf3e43483a576)) -
   (Jimmy Briggs)
