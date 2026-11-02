@@ -1,3 +1,14 @@
 ^reapi\.Rproj$
 ^\.Rproj\.user$
 ^dev$
+^\.cursor$
+^\.github$
+^\.vscode$
+^CHANGELOG\.md$
+^[.]?air[.]toml$
+^data-raw$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^LINKS\.md$
+^LICENSE\.md$

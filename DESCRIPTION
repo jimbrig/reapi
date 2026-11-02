@@ -1,14 +1,30 @@
 Package: reapi
-Title: What the Package Does (One Line, Title Case)
+Title: R API Client for Real Estate API (api.realestateapi.com)
 Version: 0.0.0.9000
 Authors@R: 
     person("Jimmy", "Briggs", , "jimmy.briggs@jimbrig.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7489-8787"))
-Description: What the package does (one paragraph).
+Description: Comprehensive API client library package to interface and
+    work with services provided by Real Estate API
+    (api.realestateapi.com).
 License: MIT + file LICENSE
+URL: https://github.com/jimbrig/reapi, http://docs.jimbrig.com/reapi/
+BugReports: https://github.com/jimbrig/reapi/issues
+Depends: 
+    R (>= 4.2.0)
+Imports: 
+    httr2,
+    rlang (>= 1.1.0)
+Suggests: 
+    httptest2,
+    knitr,
+    rmarkdown,
+    spelling,
+    testthat (>= 3.0.0),
+    withr
+Config/rcmdcheck/ignore-inconsequential-notes: true
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.1
+Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 8.1.0
-URL: https://github.com/jimbrig/reapi
-BugReports: https://github.com/jimbrig/reapi/issues

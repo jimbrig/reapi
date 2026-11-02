@@ -9,5 +9,5 @@
 
 if (FALSE) {
   usethis::create_package("reapi")
-  usethis::use_directory("dev", ignore = TRUE)
 }
+
