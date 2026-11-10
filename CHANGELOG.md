@@ -14,6 +14,8 @@
 
 ## Configuration
 
+- Introduce S7-based API configuration class with validation and verification ([63c5d84](https://github.com/jimbrig/reapi/commit/63c5d8492217e3dd2f41880e43fc8ec9aafa87e0))  - (Jimmy Briggs)
+- Git ignore .Renviron ([b3ede3e](https://github.com/jimbrig/reapi/commit/b3ede3e62e83c398e88b569c1e8ae2fced821e1c))  - (Jimmy Briggs)
 - Add dev/.gitignore to ignore temp files ([d2cd67c](https://github.com/jimbrig/reapi/commit/d2cd67cf3dd5f9407c7fec226f9837a7f693235f))  - (Jimmy Briggs)
 
 ## Documentation
@@ -21,6 +23,10 @@
 - Restructure reference documentation and clarify condition parameters ([11dcbf0](https://github.com/jimbrig/reapi/commit/11dcbf00810e46c9fa9b6b4000a39dccd3c48154))  - (Jimmy Briggs)
 - : fix README badges & logo ([c34c1a3](https://github.com/jimbrig/reapi/commit/c34c1a32597872a06b0bd7521ac166e024ea8965))  - (Jimmy Briggs)
 - **readme:** Refine layout and badge colors ([baf9113](https://github.com/jimbrig/reapi/commit/baf9113dd5e10233e52d9babe1e90d0d38273ccb))  - (Jimmy Briggs)
+
+## Features
+
+- **api:** Implement API response body parsing and caching ([58062d7](https://github.com/jimbrig/reapi/commit/58062d714f6d1778b7a4f35da70ada4a89520bb1))  - (Jimmy Briggs)
 
 ## Setup
 
