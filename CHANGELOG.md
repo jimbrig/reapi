@@ -26,6 +26,7 @@
 
 ## Features
 
+- Very initial request functions ([d5819f8](https://github.com/jimbrig/reapi/commit/d5819f8ff48c02c1fe6a0260c692fdd0a6ee71b3))  - (Jimmy Briggs)
 - **api:** Implement API response body parsing and caching ([58062d7](https://github.com/jimbrig/reapi/commit/58062d714f6d1778b7a4f35da70ada4a89520bb1))  - (Jimmy Briggs)
 
 ## Setup
