@@ -18,6 +18,7 @@
 
 ## Documentation
 
+- Restructure reference documentation and clarify condition parameters ([11dcbf0](https://github.com/jimbrig/reapi/commit/11dcbf00810e46c9fa9b6b4000a39dccd3c48154))  - (Jimmy Briggs)
 - : fix README badges & logo ([c34c1a3](https://github.com/jimbrig/reapi/commit/c34c1a32597872a06b0bd7521ac166e024ea8965))  - (Jimmy Briggs)
 - **readme:** Refine layout and badge colors ([baf9113](https://github.com/jimbrig/reapi/commit/baf9113dd5e10233e52d9babe1e90d0d38273ccb))  - (Jimmy Briggs)
 
