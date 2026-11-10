@@ -278,10 +278,6 @@ check_response <- function(x, arg = rlang::caller_arg(x), call = rlang::caller_e
 
 # reapi -------------------------------------------------------------------
 
-check_reapi_config <- function(x, arg = rlang::caller_arg(x), call = rlang::caller_env()) {
-  check_inherits(x, class = "reapi_config", arg = arg, call = call)
-}
-
 check_reapi_request <- function(x, arg = rlang::caller_arg(x), call = rlang::caller_env()) {
   check_inherits(x, class = "reapi_request", arg = arg, call = call)
 }
