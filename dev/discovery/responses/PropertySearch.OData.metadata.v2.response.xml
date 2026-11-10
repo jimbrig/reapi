@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+  <edmx:DataServices>
+    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="RealEstateAPI.OData">
+      <ComplexType Name="Address">
+        <Property Name="zip" Type="Edm.String"/>
+        <Property Name="city" Type="Edm.String"/>
+        <Property Name="county" Type="Edm.String"/>
+        <Property Name="fips" Type="Edm.String"/>
+        <Property Name="state" Type="Edm.String"/>
+        <Property Name="street" Type="Edm.String"/>
+        <Property Name="address" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="MailAddress">
+        <Property Name="zip" Type="Edm.String"/>
+        <Property Name="city" Type="Edm.String"/>
+        <Property Name="county" Type="Edm.String"/>
+        <Property Name="state" Type="Edm.String"/>
+        <Property Name="street" Type="Edm.String"/>
+        <Property Name="address" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="Neighborhood">
+        <Property Name="id" Type="Edm.Int64"/>
+        <Property Name="name" Type="Edm.String"/>
+        <Property Name="type" Type="Edm.String"/>
+        <Property Name="center" Type="Edm.GeographyPoint" SRID="4326"/>
+      </ComplexType>
+      <EntityType Name="Property">
+        <Key><PropertyRef Name="id"/></Key>
+        <Property Name="id" Type="Edm.Int64" Nullable="false"/>
+        <Property Name="propertyId" Type="Edm.Int64"/>
+        <Property Name="vacant" Type="Edm.Boolean"/>
+        <Property Name="absenteeOwner" Type="Edm.Boolean"/>
+        <Property Name="corporateOwned" Type="Edm.Boolean"/>
+        <Property Name="outOfStateAbsenteeOwner" Type="Edm.Boolean"/>
+        <Property Name="inStateAbsenteeOwner" Type="Edm.Boolean"/>
+        <Property Name="ownerOccupied" Type="Edm.Boolean"/>
+        <Property Name="death" Type="Edm.Boolean"/>
+        <Property Name="MFH2to4" Type="Edm.Boolean"/>
+        <Property Name="MFH5plus" Type="Edm.Boolean"/>
+        <Property Name="mlsActive" Type="Edm.Boolean"/>
+        <Property Name="mlsSold" Type="Edm.Boolean"/>
+        <Property Name="mlsFailed" Type="Edm.Boolean"/>
+        <Property Name="mlsPending" Type="Edm.Boolean"/>
+        <Property Name="mlsCancelled" Type="Edm.Boolean"/>
+        <Property Name="mlsHasPhotos" Type="Edm.Boolean"/>
+        <Property Name="preForeclosure" Type="Edm.Boolean"/>
+        <Property Name="judgment" Type="Edm.Boolean"/>
+        <Property Name="cashBuyer" Type="Edm.Boolean"/>
+        <Property Name="investorBuyer" Type="Edm.Boolean"/>
+        <Property Name="highEquity" Type="Edm.Boolean"/>
+        <Property Name="inherited" Type="Edm.Boolean"/>
+        <Property Name="privateLender" Type="Edm.Boolean"/>
+        <Property Name="adjustableRate" Type="Edm.Boolean"/>
+        <Property Name="assumable" Type="Edm.Boolean"/>
+        <Property Name="floodZone" Type="Edm.Boolean"/>
+        <Property Name="taxLien" Type="Edm.Boolean"/>
+        <Property Name="airConditioningAvailable" Type="Edm.Boolean"/>
+        <Property Name="bedrooms" Type="Edm.Int64"/>
+        <Property Name="bathrooms" Type="Edm.Double"/>
+        <Property Name="stories" Type="Edm.Int32"/>
+        <Property Name="unitsCount" Type="Edm.Int32"/>
+        <Property Name="roomsCount" Type="Edm.Int32"/>
+        <Property Name="yearBuilt" Type="Edm.Int32"/>
+        <Property Name="squareFeet" Type="Edm.Int64"/>
+        <Property Name="poolArea" Type="Edm.Int32"/>
+        <Property Name="deckArea" Type="Edm.Int32"/>
+        <Property Name="pool" Type="Edm.Boolean"/>
+        <Property Name="patio" Type="Edm.Boolean"/>
+        <Property Name="deck" Type="Edm.Boolean"/>
+        <Property Name="pricePerSquareFoot" Type="Edm.Int32"/>
+        <Property Name="estimatedValue" Type="Edm.Int64"/>
+        <Property Name="assessedValue" Type="Edm.Int64"/>
+        <Property Name="assessedLandValue" Type="Edm.Int64"/>
+        <Property Name="assessedImprovementValue" Type="Edm.Int64"/>
+        <Property Name="estimatedEquity" Type="Edm.Int64"/>
+        <Property Name="equityPercent" Type="Edm.Int32"/>
+        <Property Name="lastSaleAmount" Type="Edm.Int64"/>
+        <Property Name="mlsListingPrice" Type="Edm.Int64"/>
+        <Property Name="mlsSoldPrice" Type="Edm.Int64"/>
+        <Property Name="lotSquareFeet" Type="Edm.Int64"/>
+        <Property Name="latitude" Type="Edm.Double"/>
+        <Property Name="longitude" Type="Edm.Double"/>
+        <Property Name="openMortgageBalance" Type="Edm.Int64"/>
+        <Property Name="taxDelinquentYear" Type="Edm.Int64"/>
+        <Property Name="maturityDateFirst" Type="Edm.Date"/>
+        <Property Name="lastSaleDate" Type="Edm.Date"/>
+        <Property Name="mlsListingDate" Type="Edm.Date"/>
+        <Property Name="mlsFailedDate" Type="Edm.Date"/>
+        <Property Name="mlsLastStatusDate" Type="Edm.Date"/>
+        <Property Name="mlsLastSaleDate" Type="Edm.Date"/>
+        <Property Name="noticeType" Type="Edm.String"/>
+        <Property Name="propertyType" Type="Edm.String"/>
+        <Property Name="propertyUse" Type="Edm.String"/>
+        <Property Name="propertyUseCode" Type="Edm.Int32"/>
+        <Property Name="mlsStatus" Type="Edm.String"/>
+        <Property Name="mlsType" Type="Edm.String"/>
+        <Property Name="apn" Type="Edm.String"/>
+        <Property Name="parcelAccountNumber" Type="Edm.String"/>
+        <Property Name="landUse" Type="Edm.String"/>
+        <Property Name="loanTypeCode" Type="Edm.String"/>
+        <Property Name="owner1FirstName" Type="Edm.String"/>
+        <Property Name="owner1LastName" Type="Edm.String"/>
+        <Property Name="owner2FirstName" Type="Edm.String"/>
+        <Property Name="owner2LastName" Type="Edm.String"/>
+        <Property Name="companyName" Type="Edm.String"/>
+        <Property Name="roofConstruction" Type="Edm.String"/>
+        <Property Name="roofMaterial" Type="Edm.String"/>
+        <Property Name="floodZoneType" Type="Edm.String"/>
+        <Property Name="floodZoneDescription" Type="Edm.String"/>
+        <Property Name="lastUpdateDate" Type="Edm.String"/>
+        <Property Name="absenteeType" Type="Edm.String"/>
+        <Property Name="freeClear" Type="Edm.Boolean"/>
+        <Property Name="auction" Type="Edm.Boolean"/>
+        <Property Name="auctionDate" Type="Edm.Date"/>
+        <Property Name="reo" Type="Edm.Boolean"/>
+        <Property Name="foreclosure" Type="Edm.Boolean"/>
+        <Property Name="forSale" Type="Edm.Boolean"/>
+        <Property Name="negativeEquity" Type="Edm.Boolean"/>
+        <Property Name="equity" Type="Edm.Boolean"/>
+        <Property Name="patioArea" Type="Edm.Int32"/>
+        <Property Name="hoa" Type="Edm.String"/>
+        <Property Name="garage" Type="Edm.Boolean"/>
+        <Property Name="basement" Type="Edm.Boolean"/>
+        <Property Name="mlsDaysOnMarket" Type="Edm.Int64"/>
+        <Property Name="yearsOwned" Type="Edm.Int32"/>
+        <Property Name="rentAmount" Type="Edm.Int64"/>
+        <Property Name="lastSaleArmsLength" Type="Edm.Boolean"/>
+        <Property Name="recordingDate" Type="Edm.Date"/>
+        <Property Name="priorOwnerIndividual" Type="Edm.Boolean"/>
+        <Property Name="priorOwnerMonthsOwned" Type="Edm.Int32"/>
+        <Property Name="priorSaleAmount" Type="Edm.Int64"/>
+        <Property Name="documentType" Type="Edm.String"/>
+        <Property Name="documentTypeCode" Type="Edm.String"/>
+        <Property Name="lienDocumentType" Type="Edm.String"/>
+        <Property Name="listingAmount" Type="Edm.Int64"/>
+        <Property Name="lastMortgage1Amount" Type="Edm.Int64"/>
+        <Property Name="owner2Company" Type="Edm.String"/>
+        <Property Name="amountEstimated" Type="Edm.String"/>
+        <Property Name="lenderName" Type="Edm.String"/>
+        <Property Name="taxType" Type="Edm.String"/>
+        <Property Name="imageUrl" Type="Edm.String"/>
+        <Property Name="age" Type="Edm.Int32"/>
+        <Property Name="medianIncome" Type="Edm.String"/>
+        <Property Name="suggestedRent" Type="Edm.String"/>
+        <Property Name="totalPropertiesOwned" Type="Edm.Int64"/>
+        <Property Name="totalPortfolioValue" Type="Edm.Int64"/>
+        <Property Name="totalPortfolioEquity" Type="Edm.Int64"/>
+        <Property Name="totalPortfolioMortgageBalance" Type="Edm.Int64"/>
+        <Property Name="portfolioPurchasedLast6Months" Type="Edm.Int32"/>
+        <Property Name="portfolioPurchasedLast12Months" Type="Edm.Int32"/>
+        <Property Name="address" Type="RealEstateAPI.OData.Address"/>
+        <Property Name="mailAddress" Type="RealEstateAPI.OData.MailAddress"/>
+        <Property Name="neighborhood" Type="RealEstateAPI.OData.Neighborhood"/>
+      </EntityType>
+      <EntityContainer Name="Container">
+        <EntitySet Name="PropertySearch" EntityType="RealEstateAPI.OData.Property"/>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
